@@ -1,0 +1,333 @@
+/* --- Hero --- */
+.hero {
+  position: relative;
+  height: 60vh;
+  background-image: url('/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+.heroContent {
+  position: relative;
+  color: white;
+  text-align: center;
+  max-width: 600px;
+  padding: 0 1rem;
+}
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.heroSubtitle {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+.searchForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.searchSelect,
+.searchButton {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 4px;
+}
+.searchSelect {
+  background: white;
+  color: #333;
+  min-width: 120px;
+}
+.searchButton {
+  background: #0066ff;
+  color: white;
+  cursor: pointer;
+}
+.searchButton:hover {
+  background: #0051cc;
+}
+
+/* --- Rooms --- */
+.section {
+  padding: 4rem 1rem;
+}
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.roomsGrid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.roomCard {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform .2s, box-shadow .2s;
+  display: flex;
+  flex-direction: column;
+}
+.roomCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Image fills the top */
+.roomImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Info block */
+.roomInfo {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Title / Description row */
+.roomTitle {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Price + capacity row, spaced */
+.roomMeta {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+.roomPrice {
+  color: #0066ff;
+  font-weight: 600;
+}
+.roomCapacity {
+  color: #666;
+}
+
+/* --- News --- */
+.newsSection {
+  padding: 1rem 1rem;
+}
+
+.newsGrid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.newsCard {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform .2s, box-shadow .2s;
+  display: flex;
+  flex-direction: column;
+}
+.newsCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.newsImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.newsInfo {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsSource {
+  font-size: 0.75rem;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.newsTitle {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 0.25rem 0 0.75rem;
+  flex-grow: 1;
+}
+
+.newsDate {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.moreLink {
+  display: block;
+  text-align: right;
+  margin-top: 1rem;
+  color: #0066ff;
+  font-weight: 500;
+  text-decoration: none;
+}
+.moreLink:hover {
+  text-decoration: underline;
+}
+
+/* --- Services --- */
+.servicesSection {
+  padding: 2rem 1rem;
+  background: #f9f9f9;
+}
+.servicesGrid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.serviceCard {
+  width: 200px;
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.serviceTitle {
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* --- Subscribe --- */
+.subscribeSection {
+  padding: 2rem 1rem;
+  background: #eef5f7;
+}
+.subscribeInner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.partners {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.subscribeTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.subscribeText {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+.subscribeForm {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.subscribeInput {
+  padding: 0.75rem 1rem;
+  border: none;
+  flex: 1;
+}
+.subscribeButton {
+  padding: 0.75rem 1.5rem;
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* --- Sell --- */
+.sellSection {
+  padding: 2rem 1rem;
+  background: #111;
+  color: white;
+}
+.sellInner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.sellTitle {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.sellButton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  color: #111;
+  border-radius: 9999px;
+  text-decoration: none;
+}
+
+/* --- Footer --- */
+.footer {
+  background: #222;
+  color: #ddd;
+  padding: 2rem 1rem 0;
+}
+.footerInner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 1rem;
+}
+.footerCol h4 {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.footerCol a {
+  display: block;
+  color: #ddd;
+  margin: 0.25rem 0;
+  text-decoration: none;
+}
+.footerNote {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+.footerBottom {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+  border-top: 1px solid #444;
+}
+
+
+.newsGrid { display: grid; gap: 1rem; /* etc. */ }
+
+.newsImage { object-fit: cover; }
+
+.newsSource { font-size: 0.75rem; color: #999; }
+.newsTitle { font-size: 1rem; margin: 0.5rem 0; }
+.newsDate { font-size: 0.75rem; color: #666; }
+.moreLink { display: block; margin-top: 1rem; text-align: right; }

@@ -1,0 +1,13 @@
+/* src/styles/BookingsPage.module.css */
+.container { max-width:800px; margin:2rem auto; padding:1rem; }
+.title     { font-size:2rem; margin-bottom:1rem; }
+.list      { list-style:none; padding:0; }
+.card      {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:1rem; border:1px solid #ddd; border-radius:8px; margin-bottom:1rem;
+}
+.payButton {
+  background:#0066ff; color:white; padding:0.5rem 1rem;
+  border-radius:4px; text-decoration:none;
+}
+.paid      { color:green; font-weight:bold; }

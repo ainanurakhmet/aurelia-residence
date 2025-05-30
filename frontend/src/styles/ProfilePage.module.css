@@ -1,0 +1,117 @@
+.container {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-family: sans-serif;
+}
+
+.heading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.subheading {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 2rem 0 1rem;
+  color: #333;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: #555;
+}
+
+.value {
+  font-size: 1rem;
+  color: #111;
+}
+
+.bookingList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bookingItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.paidBadge {
+  background: #188038;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.payLink {
+  color: #0066ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form {
+  margin-top: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccd0d5;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #0066ff;
+  box-shadow: 0 0 0 2px rgba(0,102,255,0.2);
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #0066ff;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #0051cc;
+}
+
+.message {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.error {
+  color: #d93025;
+}
+
+.success {
+  color: #188038;
+}

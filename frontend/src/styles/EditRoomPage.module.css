@@ -1,0 +1,122 @@
+/* src/styles/EditRoomPage.module.css */
+
+
+.page {
+  background: var(--bg-page);
+  padding: calc(var(--spacing) * 2);
+  min-height: 100vh;
+}
+
+.card {
+  background: var(--bg-card);
+  max-width: 480px;
+  margin: 0 auto;
+  padding: calc(var(--spacing) * 1.5);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-strong);
+}
+
+.title {
+  font-size: 1.75rem;
+  color: var(--fg-text);
+  margin-bottom: var(--spacing);
+  text-align: center;
+}
+
+.error {
+  color: var(--error);
+  font-weight: 600;
+  margin-bottom: var(--spacing);
+  text-align: center;
+}
+
+.preview {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: var(--spacing);
+}
+
+.preview img {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-light);
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.uploadBtn {
+  display: block;
+  margin-bottom: var(--spacing);
+}
+
+.formGroup {
+  margin-bottom: var(--spacing);
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--fg-label);
+  font-weight: 500;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  color: var(--fg-text);
+  transition: border-color 0.2s;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing);
+  margin-top: var(--spacing);
+}
+
+.btn {
+  padding: 0.65rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  box-shadow: var(--shadow-light);
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.save {
+  margin-top: 10px;
+  background: #15cd43;
+  color: var(--fg-text);
+}
+
+.cancel {
+  margin-top: 10px;
+  background: #f0f0f0;
+  color: var(--fg-text);
+}
+
+.cancel:hover {
+  background: #e0e0e0;
+}

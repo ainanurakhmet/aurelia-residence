@@ -1,0 +1,170 @@
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+}
+.newsSection {
+  padding: 0 1rem;
+}
+.newsGrid {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+.newsCard {
+  min-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background: white;
+}
+.newsImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.newsInfo {
+  padding: 0.75rem;
+}
+.newsSource {
+  font-size: 0.75rem;
+  color: #999;
+}
+.newsTitle {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.newsDate {
+  font-size: 0.75rem;
+  color: #bbb;
+}
+.moreLink {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0066ff;
+  text-decoration: none;
+}
+
+.servicesSection {
+  padding: 0 1rem;
+  background: #f9f9f9;
+}
+.servicesGrid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.serviceCard {
+  width: 200px;
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.serviceTitle {
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.subscribeSection {
+  padding: 2rem 1rem;
+  background: #eef5f7;
+}
+.subscribeInner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.partners {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.subscribeTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.subscribeText {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+.subscribeForm {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.subscribeInput {
+  padding: 0.75rem 1rem;
+  border: none;
+  flex: 1;
+}
+.subscribeButton {
+  padding: 0.75rem 1.5rem;
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.sellSection {
+  padding: 2rem 1rem;
+  background: #111;
+  color: white;
+}
+.sellInner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.sellTitle {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.sellButton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  color: #111;
+  border-radius: 9999px;
+  text-decoration: none;
+}
+
+.footer {
+  background: #222;
+  color: #ddd;
+  padding: 2rem 1rem 0;
+}
+.footerInner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 1rem;
+}
+.footerCol h4 {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.footerCol a {
+  display: block;
+  color: #ddd;
+  margin: 0.25rem 0;
+  text-decoration: none;
+}
+.footerNote {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+.footerBottom {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+  border-top: 1px solid #444;
+}

@@ -1,0 +1,112 @@
+/* overall card */
+.container {
+  max-width: 480px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* gradient header */
+.header {
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  background: linear-gradient(120deg, #0066ff, #00ccff);
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+}
+.title {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.location {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-top: 0.25rem;
+}
+
+/* date pickers */
+.dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.input {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* availability summary */
+.summaryCard {
+  background: #f0f8ff;
+  border-left: 4px solid #0066ff;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+.totalPrice {
+  margin-left: 0.5rem;
+  font-size: 1.1rem;
+  color: #0066ff;
+  font-weight: 600;
+}
+
+/* messages */
+.available {
+  color: #0a0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.unavailable {
+  color: #a00;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.error {
+  color: #a00;
+  margin-bottom: 1rem;
+}
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* booking button */
+.button {
+  width: 100%;
+  padding: 0.85rem;
+  background: #0066ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+.button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+.button:not(:disabled):hover {
+  background: #0051cc;
+}
+.button:not(:disabled):active {
+  transform: translateY(1px);
+}
+
+
